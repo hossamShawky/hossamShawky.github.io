@@ -1,34 +1,265 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="index.css">
-<body class="body">
+<head>
+	<title></title>
 
-<h1>My First JavaScript</h1>
 
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<p id="demo"></p>
-<button type="button" onclick="
 
-                                
-                
-                                 
-alert('hello hossam');              ">Click To Welcome</button>
-<p id='welc'></p>
+ 
+
+
+<!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<style type="text/css">
+
+  body{background-color: #2b1c20;color:white}
+	.navbar-nav, .navbar-brand {
+		padding-left: 100px;
+	}
+
+  .dropdown-item:hover {
+    padding-left: 20px;
+    font-weight: bold;
+    transition: all .20s ease-in-out;
+
+  }
+
+ /**/
+
+ .AboutME {color: white}
+
+ 
+
+/**/
+
+.footer {text-align: center;}
+.footer ul li{display: inline-grid; padding: 15px;}
+.footer ul li>a .fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;;
+    background: #3B5998;
+  color: white;
+   opacity: 0.7;
+}
+.footer ul li>a .fa:hover {
+  opacity: 1.0;
+
+}
+
+.service:hover{    transform: scale(1.1);transition: all .25s ease-in-out; background-color: white,color:black;}
+
+.serv .container .row .service {
+  box-shadow: all; border: all 2px solid; text-align: center;
+border-style:solid ;border-width: 1px; padding: 5px;
+  box-shadow: 6px 6px 6px grey;
+  height: 250px;
+
+}
+.serv .container .row .service .serv-img>img {
+padding-bottom: 3px; width: 70px;}
+
+
+
+</style>
+</head>
+
+
+<body class="contain er-fluid" >
+  <div id="preloader">
+        <div class="loader"></div>
+    </div>
+	<!-- 
+<h2 class="alert alert-primary">HI<a href="#" class="close" data-dismiss="alert">&times;</a></h2>
+ -->
+ 
+
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Hossam </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+
+      <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+       Certifications
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://www.linkedin.com/learning/paths/become-a-software-developer?trk?flagship-lil_details_mobile_certification">Become A Software Developer</a>
+        <a class="dropdown-item" href="https://coursera.org/share/268b7235cce0a7affcc244a3e2a738">Python</a>
+        <a class="dropdown-item" href="http://www.linkedin.com/learning-sql-programming?trk=flagship-lil
+        _details_mobile_certification">My SQL</a>
+        <a class="dropdown-item" href="https://www.udemy.com/certificate/UC-3718199b-5049-45b1-bf03-c496ee0838f3/?utm_campaign=email&utm_source=sendgrid.com&utm_meduim=email">Bootstrap</a>
+        <a class="dropdown-item" href="#">RedHat Enterprise Linux 7</a>
+      </div>
+    </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+<p style="display: hidden; height: 30px"></p>
+
+
+
+
+<!-- Start About  -->
+<div  id="About" class="AboutME container" >
+  <h2 class="text-center">About Me</h2>
+
+ <br>
+<!-- Start About -->
+
+<div class="row">
+<div class="col-lg-6">
+    <h3>Personal Information</h3>
+    <p>I’m Hossam Mohammed,Study At Faculty Of Computer And Information Sciences,a passionate Back-End-Developer With Good Knoweldge Of Handiling Front-End such as HTML,CSS,JS and Bootstrap, I spend most of my time coding, learning, and implement to improve myself to be in back-end. I'm careful to Take Challenges and Overcome myself into a Better Professional!. My Goal is to understand your problem and your expectations and find the best solution for your business So If you have a project don't Hesitate to Get in Touch with me . 
+     
+
+
+    </p>
+  </div>
+
+
+
+<div class="col-lg-6">
+    <h3>Why ME</h3>
+   
+    <!-- ✔  -->
+   <ol style="list-style: none; padding-right: 5px;line-height: 30px">
+     <li><i class="fa fa-check" aria-hidden="true"> I am so creative and using web skills to increase your business success.</i></li>
+     <li><i class="fa fa-check" aria-hidden="true"> I am Expert in: PHP Native & PHP Laravel.</i></li>
+     <li><i class="fa fa-check" aria-hidden="true"> I am comfortable with Front-End like HTML,CSS and Bootstrap</i></li>
+     <li><i class="fa fa-check" aria-hidden="true"> I have a very good eye for Ideas and enhance projects.</i></li>
+     <li><i class="fa fa-check" aria-hidden="true"> Always studying new technologies.</i></li>
+     <li><i class="fa fa-check" aria-hidden="true"> I can bring a fresh, innovative approach to helping clients achieve the websites they want.</i></li> 
+
+
+   </ol>
+  </div>
+</div>
   
-  <img alt="image is not found" src="/IMG-20210706-WA0047.jpg"
-       style="width:50%;hight:50%;border-raduis:50%;
-              text-align: center"
-       />
-  <br><hr>
-<a href="https://www.facebook.com/hossam.shawky.39">hossam</a>
-</body>
-</html> 
 
+</div>
+
+
+</div>
+
+<!-- End About  -->
+
+
+
+<!-- Start Services -->
+     <section class="serv" id="services">
+  <div class="container"> 
+              <h1 class="text-center">Which Services I Offer ?</h1> 
+              <br> 
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+     <div class="service">
+              <div class="serv-img">
+  <img src="backend-img.png" alt="Back-End Image"/>
+              </div>
+              <div class="item-text">
+                      <h3>Back-End Services</h3>
+                      <p>Always,I keep user demands in mind. This help me make when coding and desining database tables and relation between them.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+                 <div class="service">
+                          <div class="serv-img" >
+                      <img src="frontend-img.png"/ height="60px">
+              </div>
+              <div class="item-text">
+                      <h3>Front End Service</h3>
+                      <p>I use technologies and frameworks like HTML,CSS and Bootstrap  to make sure your web site is robust,and responsive.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+                 <div class="service">
+                          <div class="serv-img">
+                      <img src="settings-img.jfif"/>
+              </div>
+              <div class="item-text">
+                      <h3>Support After Delivering</h3>
+                      <p>After delivering your project you
+                      can communicate with me if there are any
+                    problems or to develop the project.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div> 
+  </div>
+     </section>
+     <!-- End Services -->
+
+
+<p style="display: hidden; height: 10px;clear: both"></p>
+
+
+<div class="footer page-footer darken-3" id="Contact">
+	<h2 class="alert"  > Contact With Me</h2>
+
+<!-- <i class="fa fa-phone">01120843901</i> -->
+	<ul>
+<li><a href="https://www.linkedin.com/in/hossam-mohammed-66a9281a7"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="https://github.com/hossamShawky"><i class="fa fa-github"></i></a></li>
+<li><a href="https://www.facebook.com/hossamshawky.39"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/HossamS45397810?s=09"><i class="fa fa-twitter"></i></a></li> 
+ 
+	</ul>
+ <p>&copy; 2020 Designed By : <b>Hossam Mohammed</b	></p>
+</div>
+	<!--  -->
+
+
+</body>
+</html>
